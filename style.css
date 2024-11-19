@@ -1,0 +1,247 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('bg.jpeg'); /* Replace with your blue starry night image */
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Sets default text color to white for better contrast */
+  }
+  
+  /* Adds a black overlay for readability */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Keeps the overlay behind the content */
+  }
+  
+  /* Header Styling */
+  header {
+    background: none; /* Removes the grey background */
+    color: white; /* Ensures text is white for readability */
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px black; /* Adds shadow for readability */
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0; /* Adds spacing around the nav */
+  }
+  
+  header ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header ul li a {
+    color: white; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header ul li a:hover {
+    color: #FFD700; /* Changes link color to gold on hover */
+  }
+  
+  /* Section styling for content */
+  section {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black; /* Adds shadow for better readability */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-shadow: 1px 1px 2px black; /* Adds shadow for readability */
+  }
+
+/* Bio Section Styling */
+/*
+.bio {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .bio h2 {
+    font-size: 2rem;
+    color: #FFD700; 
+  }
+  
+  .bio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white; 
+  } */
+ 
+
+/* Gallery Section Styling */
+.gallery {
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold color for the heading */
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for each art item (image + text) */
+  .art-item {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    width: 250px; /* Set a consistent width for each art item */
+  }
+  
+  .art-item img {
+    width: 100%; /* Ensure the image takes up the full width of the art item container */
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
+  }
+  
+  .art-item p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: white; /* Text color */
+  }
+
+  /* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('bg.jpeg'); /* Replace with your image file name */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* Main Content Styling */
+  main {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  /* Welcome Section Styling */
+  .welcome h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+  }
+  
+  /* Bio Section Styling */
+  .bio {
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .bio p {
+    font-size: 1.1rem;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+/* Style for the 'Meet the Artists' image section */
+.meet-the-artists {
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if you want */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+  
+  .meet-the-artists img {
+    width: 80%; /* Adjust image size to fit well */
+    max-width: 600px; /* Maximum width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  /* General Section Styling */
+.gallery {
+  text-align: center;
+  padding: 40px 0;
+  background: none; /* No background color, inherits page's background */
+  color: #fff; /* Text color to contrast with background */
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add text readability */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for image pop-out effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for subtle blending */
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Emphasize hover */
+}
+
+  
